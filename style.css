@@ -1,0 +1,154 @@
+﻿* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: linear-gradient(red, white);
+    background-repeat: no-repeat;
+}
+
+#valenText {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+#noBtn {
+    position: absolute;
+    left: 940px;
+    top: 400px;
+}
+
+#yesBtn {
+    position: absolute;
+    left: 830px;
+    top: 400px;
+}
+
+#songBtn {
+    position: absolute;
+    left: 865px;
+    top: 10px;
+}
+
+#arrow img {
+    position: absolute;
+    transform: rotate(-12deg);
+    left: 520px;
+    top: 400px;
+    height: 100px;
+    width: 300px;
+}
+
+#arrow2 img {
+    position: absolute;
+    transform: rotate(-70deg);
+    left: 645px;
+    top: 535px;
+    height: 100px;
+    width: 300px;
+}
+
+#hostage {
+    position: absolute;
+    left: 1320px;
+    top: 650px;
+    width: 300px;
+    height: 200px;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+#gun {
+    position: absolute;
+    left: 1070px;
+    top: 550px;
+    width: 320px;
+    height: 200px;
+    opacity: 0;
+    -webkit-transform: scaleX(-1);
+    transform: rotate(30deg) scaleX(-1);
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+#cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    z-index: -1;
+}
+
+#theEnd {
+    position: absolute;
+    top: 288px;
+    left: 730px;
+    font-size: 20px;
+    color: white;
+    z-index: 6;
+    opacity: 0;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
